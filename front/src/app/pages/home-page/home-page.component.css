@@ -1,0 +1,35 @@
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home main {
+  margin: auto;
+  width: 980px;
+  height: 100%;
+  padding: 20px;
+}
+
+.home main ul {
+  list-style: none;
+}
+
+.home main li {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 980px) {
+  .home main {
+    width: 100%;
+  }
+}

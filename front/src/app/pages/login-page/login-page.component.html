@@ -1,0 +1,25 @@
+<div class="login">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <img src="https://placehold.it/250x120" alt="">
+        </mat-card-header>
+
+        <mat-card-content>
+            <form [formGroup]="form">
+                <mat-form-field>
+                    <mat-label>Username</mat-label>
+                    <input matInput type="text" formControlName="username">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" formControlName="password">
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <a routerLink="/join" mat-button>Cadastrar</a>
+            <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="submit()">Entrar</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

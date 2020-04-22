@@ -1,0 +1,23 @@
+<div class="home">
+    <header>
+        <mat-toolbar>
+            Minhas Tarefas
+            <div>
+                <button mat-icon-button (click)="openDialog()">
+                    <mat-icon>add</mat-icon>
+                </button>
+                <button mat-icon-button>
+                    <mat-icon>exit_to_app</mat-icon>
+                </button>
+            </div>
+        </mat-toolbar>
+    </header>
+    <main>
+        <ul *ngFor="let todo of todos">
+            <li>
+                <span>{{ todo.title }}</span>
+                <mat-icon *ngIf="todo.done">done</mat-icon>
+            </li>
+        </ul>
+    </main>
+</div>

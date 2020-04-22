@@ -1,0 +1,11 @@
+<form [formGroup]="form">
+    <mat-form-field>
+        <mat-label>Nova Tarefa</mat-label>
+        <input matInput type="text" formControlName="title">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button mat-button (click)="close()">Cancelar</button>
+        <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="submit()">Salvar</button>
+    </div>
+</form>

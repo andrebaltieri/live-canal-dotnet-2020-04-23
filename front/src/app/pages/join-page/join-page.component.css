@@ -1,0 +1,36 @@
+.join {
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join mat-card {
+  width: 380px;
+}
+
+.join mat-card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.join mat-card-content {
+  padding-top: 20px;
+}
+
+.join mat-form-field {
+  width: 100%;
+}
+
+.join mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 425px) {
+  .join mat-card {
+    width: 100%;
+  }
+}

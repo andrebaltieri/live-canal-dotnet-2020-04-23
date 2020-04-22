@@ -1,0 +1,36 @@
+.login {
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login mat-card {
+  width: 380px;
+}
+
+.login mat-card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.login mat-card-content {
+  padding-top: 20px;
+}
+
+.login mat-form-field {
+  width: 100%;
+}
+
+.login mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 425px) {
+  .login mat-card {
+    width: 100%;
+  }
+}
